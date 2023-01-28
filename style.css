@@ -1,0 +1,162 @@
+:root {
+    --yellow: 252, 179, 21;
+    --grey: 26, 25, 29;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+nav {
+    position: absolute;
+    position: fixed;
+    position: -webkit-sticky;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    margin: -8px 0px 0px -8px;
+    top: 5px;
+
+    width: 99.75%;
+    height: 50px;
+
+    background-color: rgba(var(--grey), 0.1);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    padding-left: 20px;
+    margin-top: -43px;
+
+    font-size: 25px;
+    font-family: var(--font-mono);
+
+    color: rgb(var(--yellow));
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-mono);
+    background-color: rgb(var(--grey));
+    color: rgb(var(--yellow));
+}
+
+section {
+    display: block;
+}
+
+.HeyThere {
+    width: 100%;
+}
+
+.HeyText { 
+    font-size: 10px;
+    white-space: initial;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.infobox{
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    flex-direction: row;
+}
+
+.Left{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 49vw;
+    flex-direction: row;
+}
+
+.Right{
+    display: flex;
+    padding: 10px;
+    width: 49vw;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.vl {
+    border-left: 6px solid rgb(var(--yellow));
+    border-radius: 5px;
+    height: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+a#scroll-btn {
+    position: absolute;
+    height: 75px;
+    width: 25px;
+    border: 0.5em solid rgb(var(--yellow));
+    margin-left: 50px;
+    left: 0;
+    bottom: 6.25em;
+    border-radius: 3em;
+}
+
+a#scroll-btn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.2em;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: rgb(var(--yellow));
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(3em);
+        opacity: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202324;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454a4d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--yellow));
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(var(--yellow));
+}
+a:visited {
+    text-decoration: none;
+    color: rgb(var(--yellow));
+}
+a:hover {
+    color: rgb(--grey);
+}
+a:active {
+    text-decoration: none; 
+    color: rgb(var(--yellow));
+}

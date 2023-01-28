@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Spotech</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="HeyThere">
+        <canvas style="position: absolute; top: 0;" id="matrix"></canvas>
+        <div style="position: absolute;">
+            <h1 class="HeyText" style="font-size: 100px; padding-top: 35vh;">Hey, I'm Haniel</h1>
+            <p class="HeyText" style="font-size: 50px; margin-top: -60px;">I'm a&nbsp;<a class="typewrite" data-period="2000" data-type='["Inventor", "Engineer", "Developer", "Designer"]'></a></p>
+        </div>
+        <a id="scroll-btn" href="#stuff"></a>
+    </div>
+    <div id="stuff" style="position: absolute; top: 100vh;">
+        <section class="infobox" style="width:100vw;">
+            <img src="./assets/index/Little_Engineer.jpg" alt="Little Engineer" style="height: 200px; border-radius: 10px;">
+            <div style="display: flex; flex-direction: column; max-width: 50%;">
+                <h1 style="height: 5px; padding-left: 10px;">About Me</h1>
+                <p style="height: 25px; padding-left: 10px;"> I am a class of 2025 student at Westview High School with lots of tech skills
+                    like software engineering and graphics design, showcased on this website.
+                    I love engineering, I am in Cyber Patriot, and create hardware and software
+                    projects as a hobby.</p>
+            </div>
+            <div class="vl"></div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="https://raw.githubusercontent.com/SpotechYT/github-stats/master/generated/languages.svg#gh-dark-mode-only" style="height: 200px">
+            </div>
+        </section>
+    </div>
+</body>
+<nav>
+    <div>
+        <img src="./assets/logo.png" style="height: 50px">
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-left: -25px;">
+        <a href="./index.html">~/Home</a>
+        <a href="./cs.html">~/Projects</a>
+        <a href="./gd.html">~/Graphics</a>
+        <a href="https://proxy.spotech.dev">~/Proxy</a>
+        <a href="./contact.html">~/Contact</a>
+    </div>
+</nav>
+<script src="./matrix.js"></script>
+<script src="./typewriter.js"></script>
+</html>
