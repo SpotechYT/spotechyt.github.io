@@ -55,6 +55,11 @@ section {
     display: block;
 }
 
+.stuff {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .HeyThere {
     width: 100%;
 }
