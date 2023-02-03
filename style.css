@@ -36,7 +36,9 @@ nav a {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 body {
@@ -107,6 +109,17 @@ section {
     height: 200px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+#stuff {
+    position: absolute;
+}
+
+#bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0px;
 }
 
 ::-webkit-scrollbar {
