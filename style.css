@@ -55,6 +55,10 @@ section {
     display: block;
 }
 
+.NavClip {
+    padding-top: 50px;
+}
+
 .stuff {
     display: flex;
     flex-wrap: wrap;
