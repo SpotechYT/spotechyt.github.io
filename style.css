@@ -36,6 +36,7 @@ nav a {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
 }
 
 body {
