@@ -95,6 +95,7 @@ section {
     margin-right: 10px;
     width: 75vw;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgb(var(--lightgrey));
     border-radius: 10px;
 }
