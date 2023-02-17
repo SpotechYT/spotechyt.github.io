@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Spotech</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href="./style.css">
+    <link rel = "stylesheet" type = "text/css" href="./waves.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="stuff" class="infobox" style="width:100vw; justify-content: center; flex-direction: row; flex-wrap: wrap; top: 70px;">
+        <div class="minifull" style="height: 50px; display: flex; justify-content: center;">
+            <button id="schoolbutton" class="menuSelect" style="background-color: rgba(var(--yellow), 0.75); color: white;" onclick="schoolclick()">School</button>
+            <hr style="border-color: rgba(0, 0, 0, 0); margin:1%">
+            <button id="personalbutton" class="menuSelect" onclick="personalclick()">Personal</button>
+        </div>
+        <div id="school" style="display: block;">
+                <section class="minifull" id="Pong">
+                    <img src="./assets/csse/Pong/Screenshot_2.png" alt="Pong" style="height: 400px; border-radius: 10px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="height: 5px; padding-left: 10px;">Java Pong</h1>
+                        <br>
+                        <a href="https://github.com/SpotechYT/Java-Pong"style="height: 25px; padding-left: 10px;">GitHub: https://github.com/SpotechYT/Java-Pong</a>
+                        <br>
+                        <p style="height: 25px; padding-left: 10px;">This was our verry first game in CSSE. We created this game because it's almost mandatory
+                            to create pong as your first game in a new programing language. For this project, we learned how to use graphics with processing IDE
+                            and basic math like score and collisions. We use stuff like fore loops, while loops, and if statements to create our game.</p>
+                    </div>
+                </section>
+                <section class="minifull" id="Duck_Hunt">
+                    <img src="./assets/csse/DuckHunt/Screenshot_3.png" alt="Duck Hunt" style="height: 400px; border-radius: 10px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="height: 5px; padding-left: 10px;">Java Duck Hunt</h1>
+                        <br>
+                        <a href="https://github.com/SpotechYT/Duck-Hunt"style="height: 25px; padding-left: 10px;">GitHub: https://github.com/SpotechYT/Java-Pong</a>
+                        <br>
+                        <p style="height: 25px; padding-left: 10px;">This was our second project of the year, and it was created to test all of our programing knowledge 
+                            and learn to use images and sounds and create assets for our game. We could have made anything we wanted with a base of mouse controls and 
+                            keyboard controls, but I chose to create the original game with my own twist of assets and sounds. I created all the sound effects with my 
+                            mouse and a mic and I created all the graphics at pixelart.com</p>
+                    </div>
+                </section>
+                <section class="minifull" id="Facebook_Dilemma" style="margin-top: 10px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="height: 5px; padding-left: 10px;">Facebook Dilemma</h1>
+                        <p style="padding-left: 10px;">The IEEE code of Ethics is a list of rules that social media platforms should follow regarding the privacy and treatment of their users. Facebook, one of the most popular social media platforms of all time, broke these rules may times and may ways when they did not tolerate disrespectful posts, they had a algorithm that promoted most liked posts despite weather or not they were accurate, and they sold the information of users to 3rd parties without their consent for advertising purposes and revenue.
+                        Facebook did not tolerate disrespectful posts. They practiced giving everyone freedom of speech and did not care about tolerating and setting rules for the posts made on the platform. For instance, a certain race might post a hate comment about another race, and anyone that's part of the race that initial posted it would give it a like therefore making that post more popular and more people would see it leading to online fights between races and groups. In response, Facebook created a list of guidelines that posts must follow with strict consequences such as permanently being banned and suspended from Facebook.
+                        Facebook also had a bias algorithm that promoted posts with more reactions despite the information contained within them. This lead to misinformation being suggested and spread to all users and causing a huge problem on the platform. Facebook CEO Mark Zuckerburg talked about it publicly and tried his best to fix it, but until today, some posts sneak past and are not caught by the algorithm.
+                        Facebook also sold the personal information of their users and invaded their privacy. Facebook would collect the data of users over the age of 15 including their liked posts, their friend and family, and their personal posts and stories to sell them to third party advertisement companies to use for advertisement purposes and all of this without their user's consent. In return, the user gets personalized ads to improve revenue of all the companies involved with this deal.
+                        In conclusion, Facebook has broken a lot of IEEE rules and are trying their best to fix them. I think that we should be explicitly asked about every aspect of out data instead of Facebook just throwing a long terms of policies during account registration. We should have our freedom to keep our so-called private information private and choose who to share it with. This will prevent lots of problems in the future and help the internet to grow to a safe and reliable place.
+                        </p>
+                    </div>
+                </section>
+                <section class="minifull" id="Pumpkin_Carving">
+                    <img src="./assets/csse/PumpkinCarving/Screenshot_2.png" alt="Pumpkin" style="height: 400px; border-radius: 10px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="height: 5px; padding-left: 10px;">Pumpkin Carving</h1>
+                        <br>
+                        <a href="https://github.com/SpotechYT/Java-Pong"style="height: 25px; padding-left: 10px;">GitHub: https://github.com/SpotechYT/Pumpkin-Carving</a>
+                        <br>
+                        <p style="height: 25px; padding-left: 10px;">I created a pumpkin in Java because we had to do it for Halloween. it introduced us to graphics with JFrame, 
+                            the REAL java graphics library. I chose to make a pumpkin looking apple with a sans face on top. we had to draw the coordinates on paper then plot them 
+                            POINT BY POINT in java. It took a while, but I am proud of what I used my time doing.</p>
+                    </div>
+                </section>
+
+                <section class="minifull" id="Q2_Final">
+                    <img src="./assets/csse/Q2Final/Screenshot_1.png" alt="Q2 Final" style="height: 400px; border-radius: 10px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="height: 5px; padding-left: 10px;">Holiday Card</h1>
+                        <br>
+                        <a href="https://github.com/SpotechYT/Duck-Hunt"style="height: 25px; padding-left: 10px;">GitHub: https://github.com/SpotechYT/Holiday-Card</a>
+                        <br>
+                        <p style="height: 25px; padding-left: 10px;">This was our quarter 2 project in which we made a holdiay card to practice working with Jframe. It was winter themed
+                            like the pumpkin carving project. Im verry happy of how it turned out.
+                        </p>
+                    </div>
+                </section>
+        </div>
+        <div id="personal" style="display: none;">
+            <section class="minifull" id="Serika">
+                <img src="./assets/personalCS/serika/Desktop.png" alt="Serika Dark" style="height: 400px; border-radius: 10px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="height: 5px; padding-left: 10px;">Serika Dark | Monkey-Type Inspired</h1>
+                    <br>
+                    <a href="https://github.com/SpotechYT/Serika-Dark"style="height: 25px; padding-left: 10px;">GitHub: https://github.com/SpotechYT/Serika-Dark</a>
+                    <br>
+                    <p style="height: 25px; padding-left: 10px;">Ricing Windows is hard and uncommon. I was looking for a grey-yellow wallapper and theme online and could not find one I liked.
+                        So, like every programmer, I made one myself. This includes themes for Vs Code, Github, Atom, Firefox, Terminal, Photoshop, a startpage, and matching wallpapers, complete with the source
+                        code and instructions.</p>
+                </div>
+            </section>
+        </div>
+        
+        <div id="bottom">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(149, 121, 13,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(149, 121, 13,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(226,183,20,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(226,183,20,0.7)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+</body>
+<nav>
+    <div>
+        <img src="./assets/logo.png" style="height: 50px; padding-left: 10px;">
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-left: -25px;">
+        <a href="./index.html">~/Home</a>
+        <a href="./cs.html">~/Projects</a>
+        <a href="./gd.html">~/Graphics</a>
+        <a href="./proxy.html">~/Proxy</a>
+        <a href="./contact.html">~/Contact</a>
+    </div>
+</nav>
+<script src="./404.js"></script>
+<script>
+    function schoolclick() {
+        document.getElementById('personal').style.display = "none";
+        document.getElementById('school').style.display = "block";
+
+        document.getElementById('schoolbutton').style.backgroundColor = "rgba(var(--yellow), 0.75)";
+        document.getElementById('schoolbutton').style.color = "white";
+
+        document.getElementById('personalbutton').style.color = "rgb(var(--yellow))";
+        document.getElementById('personalbutton').style.backgroundColor = "rgb(var(--grey))";
+    };
+
+    function personalclick() {
+        document.getElementById('personal').style.display = "block";
+        document.getElementById('school').style.display = "none";
+
+        document.getElementById('personalbutton').style.color = "white";
+        document.getElementById('personalbutton').style.backgroundColor = "rgba(var(--yellow), 0.75)";
+
+        document.getElementById('schoolbutton').style.color = "rgb(var(--yellow))";
+        document.getElementById('schoolbutton').style.backgroundColor = "rgb(var(--grey))";
+    };
+</script>
+</html>
