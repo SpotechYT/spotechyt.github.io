@@ -58,7 +58,7 @@ function updateCircles(event) {
 // Do NOT Touch
 function drawCircle(x, y, radius) {
     //fill color
-    ctx.fillStyle = "#71797E";
+    ctx.fillStyle = "#202020";
 
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, 2 * Math.PI);
