@@ -1,7 +1,7 @@
 :root {
     --yellow: 252, 179, 21;
     --grey: 32, 32, 32;
-    --lightgrey: 26, 25, 29;
+    --midgrey: 27, 27, 27;
     --darkgrey: 20, 22, 23;
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
@@ -45,7 +45,7 @@ html, body {
 
 body {
     font-family: 'heebo';
-    background-color: rgb(var(--grey));
+    background-color: rgb(var(--darkgrey));
     color: rgb(var(--yellow));
 }
 
@@ -95,7 +95,7 @@ section {
     margin-right: 10px;
     width: 75vw;
     flex-direction: row;
-    background-color: rgb(var(--lightgrey));
+    background-color: rgb(var(--grey));
     border-radius: 10px;
 }
 
@@ -108,7 +108,7 @@ section {
         max-width: 500px;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: rgb(var(--lightgrey));
+        background-color: rgb(var(--grey));
         border-radius: 10px;
     }
 
@@ -125,7 +125,7 @@ section {
     text-align: center;
     border-radius: 20px;
     border-color: rgba(0, 0, 0, 0);
-    background-color: rgb(var(--grey));
+    background-color: rgb(var(--midgrey));
     color: rgb(var(--yellow));
 }
 
@@ -227,4 +227,14 @@ a:active {
     font-family: heebo;
     src: url(./Fonts/heeebo/Heebo-Thin.ttf);
     font-weight: lighter;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
