@@ -2,14 +2,17 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8" />
-    <title>Spotech</title>
+    <title>Spotech.dev</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <link rel = "stylesheet" type = "text/css" href="./style.css">
-    <link rel = "stylesheet" type = "text/css" href="./waves.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./waves.css">
+    <link rel="stylesheet" type="text/css" href="./navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div id="HeyThere">
@@ -51,18 +54,13 @@
         </div>
     </div>
 </body>
-<nav>
-    <div>
-        <img src="./assets/logo.png" style="height: 50px; padding-left: 10px;">
-    </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-left: -25px;">
-        <a href="./index.html">~/Home</a>
-        <a href="./cs.html">~/Projects</a>
-        <a href="./gd.html">~/Graphics</a>
-        <a href="./proxy.html">~/Proxy</a>
-        <a href="./contact.html">~/Contact</a>
-    </div>
-</nav>
+<div id="navbar"></div>
+
+<script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+</script>
 <script src="./Spotlight.js"></script>
 <script src="./typewriter.js"></script>
 </html>

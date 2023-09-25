@@ -6,35 +6,6 @@
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
-nav {
-    position: absolute;
-    position: fixed;
-    position: -webkit-sticky;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    padding: 10px;
-    margin: -8px 0px 0px -8px;
-    top: 5px;
-
-    width: 99.75%;
-    height: 50px;
-
-    background-color: rgba(var(--grey), 0.1);
-    backdrop-filter: blur(10px);
-}
-
-nav a {
-    padding-left: 20px;
-    margin-top: -43px;
-
-    font-size: 25px;
-    font-family: var(--font-mono);
-
-    color: rgb(var(--yellow));
-}
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
