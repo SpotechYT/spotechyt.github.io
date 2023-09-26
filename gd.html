@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8" />
-    <title>GD | Spotech.dev</title>
+    <title>Graphics Design | Spotech.dev</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel = "stylesheet" type = "text/css" href="./style.css">
     <link rel = "stylesheet" type = "text/css" href="./waves.css">
@@ -14,6 +14,11 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+</script>
 <body>
     <div id="stuff" class="infobox" style="width:100vw; justify-content: center; flex-direction: row; flex-wrap: wrap; top: 70px;">
         <div class="minifull" style="height: 50px; display: flex; justify-content: center; flex-wrap: nowrap;">
@@ -166,11 +171,6 @@
     </div>
 </body>
 <div id="navbar"></div>
-<script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-    });
-</script>
 
 <script>
     function schoolclick() {

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8" />
-    <title>Spotech.dev</title>
+    <title>Home | Spotech.dev</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css" href="./waves.css">
@@ -14,6 +14,11 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+</script>
 <body>
     <div id="HeyThere">
         <canvas id="circles" style="position: absolute; top: 0;">
@@ -56,11 +61,6 @@
 </body>
 <div id="navbar"></div>
 
-<script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-    });
-</script>
 <script src="./Spotlight.js"></script>
 <script src="./typewriter.js"></script>
 </html>
