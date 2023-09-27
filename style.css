@@ -21,10 +21,17 @@ body {
 }
 
 footer {
+    position: relative;
     color: white;
     text-align: center;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
     font-size: 10px;
+
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 0px;
 }
 
 section {
@@ -89,6 +96,10 @@ section {
     .flexxer {
         flex-wrap: wrap;
     }
+
+    .contact-stuff {
+        flex-wrap: wrap;
+    }
 }
 
 .menuSelect {
@@ -114,15 +125,42 @@ hr {
     border-color: rgb(var(--yellow));
 }
 
-#stuff {
-    position: absolute;
+.contact-stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact-form {
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
 }
 
-#bottom {
-    width: 100%;
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 2px solid rgb(var(--yellow));
+    padding: 50px;
+}
+
+.contact-form input,button {
+    margin: 5px;
+    background-color: rgb(var(--grey));
+    border: 2px solid rgb(var(--yellow));
+    color: rgb(var(--yellow));
+    border-radius: 10px;
+    max-width: 500px;
+    height: 25px;
+}
+
+#subject-input {
+    height: 150px;
+}
+
+#stuff {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 0px;
 }
 
 ::-webkit-scrollbar {
