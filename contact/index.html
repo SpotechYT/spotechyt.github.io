@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact | Spotech.dev</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" type="text/css" href="./navbar.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -16,7 +16,7 @@
 </head>
 <script>
     $(function () {
-      $("#navbar").load("navbar.html");
+      $("#navbar").load("/navbar.html");
     });
 </script>
 <body style="margin-top: 100px;">
@@ -30,10 +30,6 @@
         </div>
         <div class="contact-form">
             <form action="https://send.pageclip.co/NxaWogSXaTfmXuybNvEO0G5ObIwiC9CT/contact-me" class="pageclip-form" method="post">
-                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-              
-                <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-                <!-- See https://pageclip.co/docs#special-fields for more info -->
                 <input type="text" name="name" placeholder="Name" required/>
                 <input type="email" name="email" placeholder="Email" required/>
                 <input id="subject-input" type="text" name="subject" placeholder="Subject" required/>
@@ -54,6 +50,6 @@
 </body>
 <div id="navbar"></div>
 
-<script src="./Spotlight.js"></script>
-<script src="./typewriter.js"></script>
+<script src="/Spotlight.js"></script>
+<script src="/typewriter.js"></script>
 </html>

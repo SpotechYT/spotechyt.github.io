@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Hardware | Spotech.dev</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<script>
+    $(function () {
+      $("#navbar").load("/navbar.html");
+    });
+</script>
+<body>
+    <div id="stuff" class="infobox" style="width:100vw; justify-content: center; flex-direction: row; flex-wrap: wrap; top: 70px;">
+        <div class="minifull" style="height: 50px; display: flex; justify-content: center; flex-wrap: nowrap;">
+            <button id="schoolbutton" class="menuSelect" style="background-color: rgba(var(--yellow), 0.75); color: white;" onclick="schoolclick()">School</button>
+            <hr style="border-color: rgba(0, 0, 0, 0); margin:1%">
+            <button id="personalbutton" class="menuSelect" onclick="personalclick()">Personal</button>
+        </div>
+        <div id="school" style="display: block;">
+        </div>
+        <div id="personal" style="display: none;">
+        </div>
+        <footer>
+            <h3>Made with Determination by Haniel Mikhaiel</h3>
+        </footer>
+    </div>
+</body>
+<div id="navbar"></div>
+
+<script>
+    function schoolclick() {
+        document.getElementById('personal').style.display = "none";
+        document.getElementById('school').style.display = "block";
+
+        document.getElementById('schoolbutton').style.backgroundColor = "rgba(var(--yellow), 0.75)";
+        document.getElementById('schoolbutton').style.color = "white";
+
+        document.getElementById('personalbutton').style.color = "rgb(var(--yellow))";
+        document.getElementById('personalbutton').style.backgroundColor = "rgb(var(--midgrey))";
+    };
+
+    function personalclick() {
+        document.getElementById('personal').style.display = "block";
+        document.getElementById('school').style.display = "none";
+
+        document.getElementById('personalbutton').style.color = "white";
+        document.getElementById('personalbutton').style.backgroundColor = "rgba(var(--yellow), 0.75)";
+
+        document.getElementById('schoolbutton').style.color = "rgb(var(--yellow))";
+        document.getElementById('schoolbutton').style.backgroundColor = "rgb(var(--midgrey))";
+    };
+</script>
+</html>
