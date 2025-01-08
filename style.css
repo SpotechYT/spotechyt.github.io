@@ -77,6 +77,11 @@ section {
     border-radius: 10px;
 }
 
+.box-color {
+    background-color: rgb(var(--grey));
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1000px) {
     .minifull{
         display: flex;
